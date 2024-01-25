@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'inscription au site «www.formulaire.com».">
+    <title>Page d'inscription</title>
+    <link href="/style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="headerIcone" src="/images/iconeBurger-menu.svg" alt="Icone représentant le menu-burger.">
+        <nav class="cache">
+            <ul>
+                <li>onglet 1</li>
+                <li>onglet 2</li>
+                <li>onglet 3</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Inscription</h1>
+        <p>Saisis tes informations</p>
+        <form action="data.php" method="GET">
+            <div class="mainFormDivUtilisateur">
+                <img class="mainFormulaireIcone iconeUtilisateur" src="/images/iconUser.svg" alt="icone représentant une personne">
+                <div class="groupeLabelPlusInput group_LabelPlusInputPrenom">
+                    <label for="prenom">Prenom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="John">
+                </div>
+                <div class="groupeLabelPlusInput">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="DOW">
+                </div>
+            </div>
+            <div class="mainFormDivEmail">
+                <img class="mainFormulaireIcone" src="/images/iconeEmail.svg" alt="icone représentant un mail">
+                <div class="groupeLabelPlusInput">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="johndow@exemple.com">
+                </div>
+            </div>
+            <div class="mainFormDivMotDePasse">
+                <img class="mainFormulaireIcone" src="/images/iconLock.svg" alt="">
+                <div class="groupeLabelPlusInput">
+                    <label for="motDePasse">Mot de passe</label>
+                    <input type="password" id="motDePasse" name="motDePasse">
+                </div>
+            </div>
+            <div class="mainFormDivMotDePasse">
+                <img class="mainFormulaireIcone" src="/images/iconLock.svg" alt="">
+                <div class="groupeLabelPlusInput groupe_labelPlusMotDePasse">
+                    <label for="ConfirmationMotDePasse">Repéter le mot de passe</label>
+                    <input type="password" id="ConfirmationMotDePasse" name="motDePasse">
+                </div>
+            </div>
+            <div class="mainFormDivCheck">
+                <img class="mainFormulaireIconeCroix iconePasOk" src="/images/iconPasOk.svg" alt="icone représentant une mauvaise saisie validation utilisateur">
+                <p>8 caractères minimum</p>
+            </div>
+            <div class="mainFormDivCheck">
+                <img class="mainFormulaireIconeCroix iconeCaracteresSpeciauxPasOk" src="/images/iconPasOk.svg" alt="icone représentant une mauvaise saisie utilisateur">
+                <p>Majuscule, minuscule, et un chiffre</p>
+            </div>
+            <div id="groupeLabelPlusInput_submit">
+                <img class="MainFormIconeRetour" src="/images/arrow-back-white.svg" alt="Icone représentant un retour à la dernière page consultée par l'utilisateur">
+                <input type="submit" value="Créer un compte">
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

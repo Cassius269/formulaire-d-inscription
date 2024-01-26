@@ -4,7 +4,7 @@ let inputMotDePasse=document.querySelector("#motDePasse");
 
 let inputConfirmationMotDePasse=document.querySelector("#ConfirmationMotDePasse");
 
-let input
+
 // Evenement de type input pour tester l'égalité des mots de passes
 
     // Fonction callback de verification des mots de passe
@@ -56,6 +56,9 @@ function verifierMemeMotDePasse(){
             console.log("mots de passe égaux");
         }
         else {
+            iconeLongueurPasOk.setAttribute("src","/images/iconPasOk.svg");
+            iconeLongueurPasOk.setAttribute("alt","Icone représentant une mauvaise saisie utilisateur");
+
             console.log("Longueur pas ok");
             console.log("mots de passe pas ok");
 
@@ -81,9 +84,9 @@ function verifierRegexMotDePasse(){
         iconeCaracteresSpeciauxPasOk.setAttribute("src","/images/iconeOK.svg");
         console.log("regex ok");
     }
-    else{
+    else {
         iconeCaracteresSpeciauxPasOk.setAttribute("src","/images/iconPasOk.svg");
-        console.log("regex pas ok")
+        console.log("regex pas ok");
     }
 }
 
